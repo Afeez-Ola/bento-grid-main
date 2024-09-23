@@ -251,3 +251,41 @@ img {
     width: 80%;
     max-width: 15rem;
 }
+
+.container:nth-child(1) {
+    grid-area: "rating_card";
+}
+
+.container:nth-child(2) {
+    grid-area: "social_card";
+}
+
+.container:nth-child(3) {
+    grid-area: "schedule_card";
+}
+
+.container:nth-child(4) {
+    grid-area: "schedule_social_card";
+}
+
+.container:nth-child(5) {
+    grid-area: "grow_followers_card";
+}
+
+.container:nth-child(5) {
+    grid-area: "audience_growth_card";
+}
+
+.container:nth-child(5) {
+    grid-area: "create_post_card";
+}
+
+.container:nth-child(5) {
+    grid-area: "ai_content_card";
+}
+
+@media screen and (min-width:30rem) {
+    .container {
+        grid-template-areas: 'create_post_card rating_card rating_card schedule_social_card';
+    }
+}
