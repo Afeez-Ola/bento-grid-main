@@ -20,7 +20,6 @@
 }
 
 body {
-    /* background: var(--white); */
     color: var(--black);
     -webkit-font-smoothing: antialiased;
     width: 100%;
@@ -52,12 +51,14 @@ img {
 .container {
     width: 90%;
     margin: 1rem auto;
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
+    display: grid;
+    grid-template-areas: 'rating_card''social_card''schedule_social_card''grow_followers_card''audience_growth_card''create_post_card''ai_content_card';
+    gap: 2rem;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* gap: 3rem; */
 }
 
 .rating_card {
