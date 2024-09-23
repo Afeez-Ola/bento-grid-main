@@ -99,16 +99,22 @@ img {
     background: var(--white);
 }
 
+.social_card_content {
+    min-width: 90%;
+    max-width: 30rem;
+    margin: 0.5rem auto;
+}
+
 .social_card img {
     background: var(--white);
+    margin: 0.3rem auto;
 }
 
 .social_card h3 {
     font-size: 1.8rem;
     font-family: var(--font-family);
     font-weight: var(--bold);
-    padding-bottom: 0.5rem;
-    margin-top: 0.75rem;
+    margin: 0.5rem auto;
     color: var(--black);
 }
 
