@@ -150,3 +150,12 @@ img {
     font-family: var(--font-family);
     font-weight: var(--bold);
 }
+
+.schedule_social_card h4 {
+    font-size: 1.4rem;
+    margin: 0.75rem auto;
+    color: var(--black);
+    font-family: var(--font-family);
+    font-weight: var(--normal);
+    text-align: center;
+}
