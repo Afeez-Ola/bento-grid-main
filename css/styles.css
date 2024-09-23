@@ -199,3 +199,32 @@ img {
 .audience_growth_card p {
     color: var(--black);
 }
+
+.create_post_card {
+    background: var(--yellow-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.3rem;
+    gap: 1.3rem;
+    font-family: var(--font-family);
+}
+
+.create_post_card h3 {
+    /* text-align: center; */
+    font-size: 1.9rem;
+    margin: 0.75rem auto;
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: var(--black);
+}
+
+.create_post_card h3 span {
+    color: var(--purple-500);
+    font-style: italic;
+}
+
+.create_post_card img {
+    width: 60%;
+    max-width: 20rem;
+}
