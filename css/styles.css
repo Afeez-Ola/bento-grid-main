@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
 :root {
     --purple-100: hsl(254, 88%, 90%);
     --purple-500: hsl(256, 67%, 59%);
@@ -328,77 +327,40 @@ img {
 
 @media screen and (min-width:30rem) {
     .container {
-        /* grid-template-areas: "create_post_card rating_card rating_card schedule_social_card""create_post_card social_card schedule_card schedule_social_card""ai_content_card audience_growth_card grow_followers_card grow_followers_card"; */
         grid-auto-columns: minmax(0, 1fr);
         grid-auto-flow: column;
         gap: 3rem;
     }
-
     .rating_card {
         grid-column: 2/4;
         grid-row: 1/1;
     }
-
     .create_post_card {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-
     .schedule_social_card {
         grid-column: 75%;
         grid-row: 1/3;
-        /* 3/4 */
     }
-
     .ai_content_card {
         grid-column: 1/1;
         grid-row: 3/4;
     }
-
     .social_card {
         grid-column: 2/3;
-        /* 2/3 */
         grid-row: 2/3;
     }
-
     .schedule_card {
         grid-column: 3/4;
         grid-row: 2/3;
     }
-
     .audience_growth_card {
         grid-column: 2/3;
         grid-row: 3/4;
     }
-
     .grow_followers_card {
         grid-column: 3/5;
-        /* 3/4 */
         grid-row: 3/5;
     }
-
-    /* .rating_card {
-            grid-area: rating_card;
-        }
-        .schedule_card {
-            grid-area: schedule_card;
-        }
-        .schedule_social_card {
-            grid-area: schedule_social_card;
-        }
-        .create_post_card {
-            grid-area: create_post_card;
-        }
-        .ai_content_card {
-            grid-area: ai_content_card;
-        }
-        .grow_followers_card {
-            grid-area: grow_followers_card;
-        }
-        .social_card {
-            grid-area: social_card;
-        }
-        .audience_growth_card {
-            grid-area: audience_growth_card;
-        } */
 }
