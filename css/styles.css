@@ -52,6 +52,8 @@ img {
     width: 90%;
     margin: 1rem auto;
     display: grid;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
     grid-template-areas: 'rating_card''social_card''schedule_card''schedule_social_card''grow_followers_card''audience_growth_card''create_post_card''ai_content_card';
     gap: 2rem;
 }
@@ -199,38 +201,46 @@ img {
 
 .audience_growth_card {
     background: var(--white);
+}
+
+.audience_growth_card_content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.8rem;
-    gap: 1.3rem;
+    gap: 1rem;
     font-family: var(--font-family);
+    color: var(--black);
+    margin: 1rem;
+    width: 70%;
 }
 
 .audience_growth_card h2 {
-    color: var(--black);
     font-size: 2.5rem;
     font-family: var(--font-family);
     font-weight: 700;
 }
 
 .audience_growth_card p {
-    color: var(--black);
+    font-weight: var(--bold);
 }
 
 .create_post_card {
     background: var(--yellow-100);
+}
+
+.create_post_card_content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2.3rem;
-    gap: 1.3rem;
+    gap: 1rem;
     font-family: var(--font-family);
+    width: 80%;
+    margin: 1.5rem auto;
 }
 
 .create_post_card h3 {
     font-size: 1.9rem;
-    margin: 0.75rem auto;
+    margin-inline: auto;
     font-family: var(--font-family);
     font-weight: 700;
     color: var(--black);
@@ -248,16 +258,19 @@ img {
 
 .ai_content_card {
     background: var(--yellow-500);
+}
+
+.ai_content_card_content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 2.3rem;
     gap: 1.3rem;
     font-family: var(--font-family);
+    width: 90%;
+    margin: 1rem auto;
 }
 
 .ai_content_card h3 {
-    font-size: 1.9rem;
+    font-size: 2.5rem;
     margin: 0.75rem auto;
     font-family: var(--font-family);
     font-weight: 700;
@@ -266,46 +279,44 @@ img {
 
 .ai_content_card img {
     width: 80%;
-    max-width: 15rem;
+    max-width: 20rem;
 }
 
 .container:nth-child(1) {
-    grid-area: "rating_card";
+    grid-area: rating_card;
 }
 
 .container:nth-child(2) {
-    grid-area: "social_card";
+    grid-area: social_card;
 }
 
 .container:nth-child(3) {
-    grid-area: "schedule_card";
+    grid-area: schedule_card;
 }
 
 .container:nth-child(4) {
-    grid-area: "schedule_social_card";
+    grid-area: schedule_social_card;
 }
 
 .container:nth-child(5) {
-    grid-area: "grow_followers_card";
+    grid-area: grow_followers_card;
 }
 
 .container:nth-child(6) {
-    grid-area: "audience_growth_card";
+    grid-area: audience_growth_card;
 }
 
 .container:nth-child(7) {
-    grid-area: "create_post_card";
+    grid-area: create_post_card;
 }
 
 .container:nth-child(8) {
-    grid-area: "ai_content_card";
+    grid-area: ai_content_card;
 }
 
 @media screen and (min-width:30rem) {
     .container {
-        /* grid-template-areas: "rating_card rating_card schedule_social_card" "create_post_card schedule_card schedule_social_card" "ai_content_card schedule_card grow_followers_card" "audience_growth_card social_card grow_followers_card"; */
         grid-template-areas: "create_post_card rating_card rating_card schedule_social_card""create_post_card social_card schedule_card schedule_social_card""ai_content_card audience_growth_card grow_followers_card grow_followers_card";
-        /* grid-template-columns: 1fr 1fr 1fr; */
         gap: 3rem;
     }
     .rating_card {
