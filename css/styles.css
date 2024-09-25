@@ -53,8 +53,6 @@ img {
     width: min(90%, 70rem);
     margin: 1rem auto;
     display: grid;
-    /* grid-auto-columns: auto;
-    grid-auto-rows: auto; */
     grid-template-areas: 'rating_card''social_card''schedule_card''schedule_social_card''grow_followers_card''audience_growth_card''create_post_card''ai_content_card';
     grid-template-rows: repeat(8, auto);
     gap: 2rem;
@@ -228,7 +226,6 @@ img {
 
 .create_post_card {
     background: var(--yellow-100);
-    /* display: flex; */
 }
 
 .create_post_card_content {
@@ -291,38 +288,6 @@ img {
 
 .grid-row-span-2 {
     grid-row: span 2;
-}
-
-.container:nth-child(1) {
-    grid-area: rating_card;
-}
-
-.container:nth-child(2) {
-    grid-area: social_card;
-}
-
-.container:nth-child(3) {
-    grid-area: schedule_card;
-}
-
-.container:nth-child(4) {
-    grid-area: schedule_social_card;
-}
-
-.container:nth-child(5) {
-    grid-area: grow_followers_card;
-}
-
-.container:nth-child(6) {
-    grid-area: audience_growth_card;
-}
-
-.container:nth-child(7) {
-    grid-area: create_post_card;
-}
-
-.container:nth-child(8) {
-    grid-area: ai_content_card;
 }
 
 @media screen and (min-width:40rem) {
